@@ -6,16 +6,16 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/user/getabc/internal/api"
-	"github.com/user/getabc/internal/config"
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/api"
+	"github.com/hogecode/getabc/internal/config"
+	"github.com/hogecode/getabc/internal/models"
 )
 
 // ProgramLookupUseCase handles program lookup
 type ProgramLookupUseCase struct {
-	client           *api.Client
-	logger           *slog.Logger
-	channelMapping   models.ChannelMapping
+	client         *api.Client
+	logger         *slog.Logger
+	channelMapping models.ChannelMapping
 }
 
 // NewProgramLookupUseCase creates a new program lookup use case

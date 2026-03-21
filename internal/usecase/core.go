@@ -6,20 +6,20 @@ import (
 	"log/slog"
 	"strconv"
 
-	"github.com/user/getabc/internal/api"
-	"github.com/user/getabc/internal/config"
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/api"
+	"github.com/hogecode/getabc/internal/config"
+	"github.com/hogecode/getabc/internal/models"
 )
 
 // CoreUseCase orchestrates the main workflow
 type CoreUseCase struct {
-	apiClient       *api.Client
-	logger          *slog.Logger
-	channelMapping  models.ChannelMapping
-	titleSearch     *TitleSearchUseCase
-	programLookup   *ProgramLookupUseCase
-	jikkyoAnalysis  *JikkyoAnalysisUseCase
-	input           io.Reader
+	apiClient      *api.Client
+	logger         *slog.Logger
+	channelMapping models.ChannelMapping
+	titleSearch    *TitleSearchUseCase
+	programLookup  *ProgramLookupUseCase
+	jikkyoAnalysis *JikkyoAnalysisUseCase
+	input          io.Reader
 }
 
 // NewCoreUseCase creates a new core use case

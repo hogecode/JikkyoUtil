@@ -3,8 +3,8 @@ package api
 import (
 	"fmt"
 
-	"github.com/user/getabc/internal/config"
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/config"
+	"github.com/hogecode/getabc/internal/models"
 )
 
 // GetJikkyoComments fetches comments from Jikkyo API

@@ -41,8 +41,8 @@ func NewClient() *Client {
 	// Set reasonable timeout
 	client.SetTimeout(10 * time.Second)
 
-	// Set User-Agent
-	client.SetHeader("User-Agent", "getabc/1.0")
+	// Set hogecode-Agent
+	client.SetHeader("hogecode-Agent", "getabc/1.0")
 
 	return &Client{
 		Client: client,

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/models"
 )
 
 func TestParseProgItemTimes(t *testing.T) {

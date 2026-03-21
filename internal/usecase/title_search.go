@@ -7,11 +7,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/user/getabc/internal/api"
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/api"
+	"github.com/hogecode/getabc/internal/models"
 )
 
-// TitleSearchUseCase handles title search and user selection
+// TitleSearchUseCase handles title search and hogecode selection
 type TitleSearchUseCase struct {
 	client *api.Client
 	logger *slog.Logger
@@ -58,7 +58,7 @@ func (uc *TitleSearchUseCase) SearchAndSelect(query string) (*models.Title, erro
 	return uc.promptUserSelection(titles)
 }
 
-// promptUserSelection displays a menu and gets user selection
+// promptUserSelection displays a menu and gets hogecode selection
 func (uc *TitleSearchUseCase) promptUserSelection(titles []*models.Title) (*models.Title, error) {
 	fmt.Println("\nMultiple titles found:")
 	for i, title := range titles {
@@ -67,7 +67,7 @@ func (uc *TitleSearchUseCase) promptUserSelection(titles []*models.Title) (*mode
 
 	fmt.Print("\nSelect (1-" + strconv.Itoa(len(titles)) + "): ")
 
-	// Read user input
+	// Read hogecode input
 	var input string
 	_, err := fmt.Fscanln(uc.input, &input)
 	if err != nil {

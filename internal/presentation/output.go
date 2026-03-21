@@ -3,7 +3,7 @@ package presentation
 import (
 	"fmt"
 
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/models"
 )
 
 // OutputFormatter handles result formatting and display

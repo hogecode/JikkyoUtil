@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/user/getabc/internal/api"
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/api"
+	"github.com/hogecode/getabc/internal/models"
 )
 
 // JikkyoAnalysisUseCase analyzes Jikkyo comments

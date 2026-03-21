@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/hogecode/getabc/internal/api"
+	"github.com/hogecode/getabc/internal/presentation"
+	"github.com/hogecode/getabc/internal/usecase"
 	"github.com/spf13/cobra"
-	"github.com/user/getabc/internal/api"
-	"github.com/user/getabc/internal/presentation"
-	"github.com/user/getabc/internal/usecase"
 )
 
 var (

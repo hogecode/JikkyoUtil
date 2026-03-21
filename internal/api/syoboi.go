@@ -4,15 +4,15 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/user/getabc/internal/config"
-	"github.com/user/getabc/internal/models"
+	"github.com/hogecode/getabc/internal/config"
+	"github.com/hogecode/getabc/internal/models"
 )
 
 // TitleSearch calls the Syoboi TitleSearch API
 func (c *Client) TitleSearch(searchQuery string) (*models.TitleSearchResponse, error) {
 	resp, err := c.R().
 		SetQueryParams(map[string]string{
-			"Req":   "TitleSearch",
+			"Req":    "TitleSearch",
 			"Search": searchQuery,
 			"Limit":  "15",
 		}).

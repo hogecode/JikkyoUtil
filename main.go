@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/user/getabc/cmd"
+	"github.com/hogecode/getabc/cmd"
 )
 
 func main() {
