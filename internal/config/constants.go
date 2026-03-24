@@ -22,10 +22,10 @@ func NewChannelMapping() models.ChannelMapping {
 		"NHK総合":    {ChID: 1, ChGID: 11, ChName: "NHK総合", JikkyoID: "jk1"},
 		"NHK Eテレ":  {ChID: 2, ChGID: 11, ChName: "NHK Eテレ", JikkyoID: "jk2"},
 		"フジテレビ":    {ChID: 3, ChGID: 1, ChName: "フジテレビ", JikkyoID: "jk8"},
-		"日本テレビ":    {ChID: 4, ChGID: 1, ChName: "日本テレビ", JikkyoID: "jk4"},
-		"TBS":      {ChID: 5, ChGID: 1, ChName: "TBS", JikkyoID: "jk6"},
+		"日本テレビ":    {ChID: 4, ChGID: 1, ChName: "日テレ１", JikkyoID: "jk4"},
+		"TBS":      {ChID: 5, ChGID: 1, ChName: "ＴＢＳ１", JikkyoID: "jk6"},
 		"テレビ朝日":    {ChID: 6, ChGID: 1, ChName: "テレビ朝日", JikkyoID: "jk5"},
-		"テレビ東京":    {ChID: 7, ChGID: 1, ChName: "テレビ東京", JikkyoID: "jk7"},
+		"テレビ東京":    {ChID: 7, ChGID: 1, ChName: "テレビ東京１", JikkyoID: "jk7"},
 		"tvk":      {ChID: 8, ChGID: 1, ChName: "tvk", JikkyoID: "jk11"},
 		//"NHK-BS1":  {ChID: 9, ChGID: 9, ChName: "NHK-BS1", JikkyoID: "jk101"},
 		//"NHK-BS2":  {ChID: 10, ChGID: 9, ChName: "NHK-BS2", JikkyoID: "jk101"},
@@ -37,7 +37,7 @@ func NewChannelMapping() models.ChannelMapping {
 		//"BS-TBS":   {ChID: 16, ChGID: 2, ChName: "BS-TBS", JikkyoID: "jk161"},
 		//"BSフジ":     {ChID: 17, ChGID: 2, ChName: "BSフジ", JikkyoID: "jk181"},
 		//"BS朝日":     {ChID: 18, ChGID: 2, ChName: "BS朝日", JikkyoID: "jk151"},
-		"TOKYO MX": {ChID: 19, ChGID: 1, ChName: "TOKYO MX", JikkyoID: "jk9"},
+		"TOKYO MX": {ChID: 19, ChGID: 1, ChName: "ＴＯＫＹＯ　ＭＸ１", JikkyoID: "jk9"},
 	}
 }
 
