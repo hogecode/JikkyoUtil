@@ -29,11 +29,6 @@ go build -o jikkyo.exe .
 
 ## 使い方
 
-### 基本的な使用方法
-
-```bash
-./jikkyo.exe jikkyo -t "タイトル" -e エピソード番号
-```
 
 ### フラグ一覧
 
@@ -49,7 +44,7 @@ go build -o jikkyo.exe .
 #### 1. シンプル実行
 
 ```bash
-./jikkyo.exe jikkyo -t "プリパラ" -e 1
+./jikkyo.exe -t "プリパラ" -e 1
 ```
 
 **結果:**
@@ -107,7 +102,3 @@ done
 - [Syoboi Calendar](http://cal.syoboi.jp/) - テレビ放送予定データベース
 - [Jikkyo API](https://jikkyo.tsukumijima.net/) - 放送コメント API
 
-
-### その他
-
-しょぼいカレンダーでタイトルIDを取得する際、地デジではないチャンネルしか取得できない場合があり、(例：AT-X, Youtube)正しく取得できない場合がございます。

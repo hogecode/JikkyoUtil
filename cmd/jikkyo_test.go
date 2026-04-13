@@ -4,25 +4,6 @@ import (
 	"testing"
 )
 
-func TestJikkyoCommand(t *testing.T) {
-	// Test that jikkyoCmd is properly configured
-	if jikkyoCmd == nil {
-		t.Fatal("jikkyoCmd should not be nil")
-	}
-
-	if jikkyoCmd.Use != "jikkyo" {
-		t.Errorf("expected Use 'jikkyo', got %s", jikkyoCmd.Use)
-	}
-
-	if jikkyoCmd.Short == "" {
-		t.Error("expected Short description to be non-empty")
-	}
-
-	if jikkyoCmd.Long == "" {
-		t.Error("expected Long description to be non-empty")
-	}
-}
-
 func TestFlagConfiguration(t *testing.T) {
 	// Reset flag values
 	title = ""

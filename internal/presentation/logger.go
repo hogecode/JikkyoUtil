@@ -24,7 +24,7 @@ func NewLogger(config LoggerConfig) (*slog.Logger, error) {
 	if config.Verbose {
 		level = slog.LevelDebug
 	} else {
-		level = slog.LevelInfo
+		level = slog.LevelWarn
 	}
 
 	// If log file is specified, also write to file

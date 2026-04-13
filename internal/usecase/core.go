@@ -44,7 +44,7 @@ func NewCoreUseCase(client *api.Client, logger *slog.Logger, input io.Reader) *C
 
 // Execute runs the main workflow
 func (uc *CoreUseCase) Execute(titleQuery string, episode int) (*models.JikkyoResult, error) {
-	uc.logger.Info("starting getabc workflow",
+	uc.logger.Debug("starting jikkyo workflow",
 		slog.String("title_query", titleQuery),
 		slog.Int("episode", episode))
 
