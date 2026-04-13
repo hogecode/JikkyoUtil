@@ -1,24 +1,24 @@
-package cmd
+﻿package cmd
 
 import (
 	"testing"
 )
 
-func TestGetabcCommand(t *testing.T) {
-	// Test that getabcCmd is properly configured
-	if getabcCmd == nil {
-		t.Fatal("getabcCmd should not be nil")
+func TestJikkyoCommand(t *testing.T) {
+	// Test that jikkyoCmd is properly configured
+	if jikkyoCmd == nil {
+		t.Fatal("jikkyoCmd should not be nil")
 	}
 
-	if getabcCmd.Use != "getabc" {
-		t.Errorf("expected Use 'getabc', got %s", getabcCmd.Use)
+	if jikkyoCmd.Use != "jikkyo" {
+		t.Errorf("expected Use 'jikkyo', got %s", jikkyoCmd.Use)
 	}
 
-	if getabcCmd.Short == "" {
+	if jikkyoCmd.Short == "" {
 		t.Error("expected Short description to be non-empty")
 	}
 
-	if getabcCmd.Long == "" {
+	if jikkyoCmd.Long == "" {
 		t.Error("expected Long description to be non-empty")
 	}
 }

@@ -1,7 +1,7 @@
-package models
+﻿package models
 
-// GetABCResult is the final output of getabc command
-type GetABCResult struct {
+// JikkyoResult is the final output of jikkyo command
+type JikkyoResult struct {
 	Title           string // TV series title
 	Episode         int    // Episode number
 	SubTitle        string // Episode subtitle

@@ -1,4 +1,4 @@
-package usecase
+﻿package usecase
 
 import (
 	"fmt"
@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/hogecode/getabc/internal/config"
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/config"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // ProgramFileGenerator handles generation of program info files

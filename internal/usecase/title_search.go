@@ -1,4 +1,4 @@
-package usecase
+﻿package usecase
 
 import (
 	"fmt"
@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hogecode/getabc/internal/api"
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/api"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // TitleSearchUseCase handles title search and hogecode selection

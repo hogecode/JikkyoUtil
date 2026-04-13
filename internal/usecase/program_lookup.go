@@ -1,4 +1,4 @@
-package usecase
+﻿package usecase
 
 import (
 	"fmt"
@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/hogecode/getabc/internal/api"
-	"github.com/hogecode/getabc/internal/config"
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/api"
+	"github.com/hogecode/JikkyoUtil/internal/config"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // ProgramLookupUseCase handles program lookup

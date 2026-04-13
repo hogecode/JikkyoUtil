@@ -6,21 +6,21 @@ import (
 	"log/slog"
 	"strconv"
 
-	"github.com/hogecode/getabc/internal/api"
-	"github.com/hogecode/getabc/internal/config"
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/api"
+	"github.com/hogecode/JikkyoUtil/internal/config"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // CoreUseCase orchestrates the main workflow
 type CoreUseCase struct {
-	apiClient       *api.Client
-	logger          *slog.Logger
-	channelMapping  models.ChannelMapping
-	titleSearch     *TitleSearchUseCase
-	programLookup   *ProgramLookupUseCase
-	jikkyoAnalysis  *JikkyoAnalysisUseCase
-	programFileGen  *ProgramFileGenerator
-	input           io.Reader
+	apiClient      *api.Client
+	logger         *slog.Logger
+	channelMapping models.ChannelMapping
+	titleSearch    *TitleSearchUseCase
+	programLookup  *ProgramLookupUseCase
+	jikkyoAnalysis *JikkyoAnalysisUseCase
+	programFileGen *ProgramFileGenerator
+	input          io.Reader
 }
 
 // NewCoreUseCase creates a new core use case
@@ -43,7 +43,7 @@ func NewCoreUseCase(client *api.Client, logger *slog.Logger, input io.Reader) *C
 }
 
 // Execute runs the main workflow
-func (uc *CoreUseCase) Execute(titleQuery string, episode int) (*models.GetABCResult, error) {
+func (uc *CoreUseCase) Execute(titleQuery string, episode int) (*models.JikkyoResult, error) {
 	uc.logger.Info("starting getabc workflow",
 		slog.String("title_query", titleQuery),
 		slog.Int("episode", episode))
@@ -97,18 +97,18 @@ func (uc *CoreUseCase) Execute(titleQuery string, episode int) (*models.GetABCRe
 	return result, nil
 }
 
-// buildResult constructs the final GetABCResult
+// buildResult constructs the final JikkyoResult
 func (uc *CoreUseCase) buildResult(
 	title *models.Title,
 	episode int,
 	progItem *models.ProgItem,
 	analysis *models.CommentAnalysis,
-) *models.GetABCResult {
+) *models.JikkyoResult {
 
 	// Convert episode to int if needed
 	episodeInt, _ := strconv.Atoi(strconv.Itoa(episode))
 
-	result := &models.GetABCResult{
+	result := &models.JikkyoResult{
 		Title:    title.Title,
 		Episode:  episodeInt,
 		SubTitle: progItem.STSubTitle,

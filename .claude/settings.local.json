@@ -4,8 +4,8 @@
       "Bash(go mod:*)",
       "Bash(go get:*)",
       "Bash(go build:*)",
-      "Bash(./getabc.exe --help)",
-      "Bash(./getabc.exe getabc:*)",
+      "Bash(./jikkyo.exe --help)",
+      "Bash(./jikkyo.exe jikkyo:*)",
       "Bash(go test:*)",
       "Skill(update-config)"
     ]

@@ -1,4 +1,4 @@
-package cmd
+﻿package cmd
 
 import (
 	"os"
@@ -8,9 +8,9 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "getabc",
+	Use:   "jikkyo",
 	Short: "Get anime broadcast segment markers (ｷﾀ, A, B, C)",
-	Long: `getabc is a CLI tool that finds the start times of anime broadcast segments.
+	Long: `jikkyo is a CLI tool that finds the start times of anime broadcast segments.
 
 It analyzes broadcast comments to identify:
   - ｷﾀ: Actual broadcast start time

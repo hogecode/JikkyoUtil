@@ -1,10 +1,10 @@
-package usecase
+﻿package usecase
 
 import (
 	"testing"
 	"time"
 
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 func TestParseProgItemTimes(t *testing.T) {

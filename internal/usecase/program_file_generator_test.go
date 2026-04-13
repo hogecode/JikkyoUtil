@@ -1,12 +1,12 @@
-package usecase
+﻿package usecase
 
 import (
 	"log/slog"
 	"testing"
 	"time"
 
-	"github.com/hogecode/getabc/internal/config"
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/config"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 func TestGenerateFilename(t *testing.T) {

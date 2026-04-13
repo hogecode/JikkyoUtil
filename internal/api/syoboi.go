@@ -1,12 +1,12 @@
-package api
+﻿package api
 
 import (
 	"encoding/xml"
 	"fmt"
 	"log/slog"
 
-	"github.com/hogecode/getabc/internal/config"
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/config"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // TitleSearch calls the Syoboi TitleSearch API

@@ -1,6 +1,8 @@
-module github.com/hogecode/getabc
+module github.com/hogecode/JikkyoUtil
 
 go 1.25.0
+
+replace github.com/hogecode/getabc => ./
 
 require (
 	github.com/go-resty/resty/v2 v2.17.2

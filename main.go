@@ -1,7 +1,7 @@
-package main
+﻿package main
 
 import (
-	"github.com/hogecode/getabc/cmd"
+	"github.com/hogecode/JikkyoUtil/cmd"
 )
 
 func main() {

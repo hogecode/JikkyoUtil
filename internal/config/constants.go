@@ -1,9 +1,9 @@
-package config
+﻿package config
 
 import (
 	"time"
 
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // JST is Japan Standard Time (UTC+9)

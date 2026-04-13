@@ -1,12 +1,12 @@
-package usecase
+﻿package usecase
 
 import (
 	"log/slog"
 	"strconv"
 	"strings"
 
-	"github.com/hogecode/getabc/internal/api"
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/api"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // JikkyoAnalysisUseCase analyzes Jikkyo comments

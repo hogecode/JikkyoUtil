@@ -3,7 +3,7 @@ package presentation
 import (
 	"fmt"
 
-	"github.com/hogecode/getabc/internal/models"
+	"github.com/hogecode/JikkyoUtil/internal/models"
 )
 
 // OutputFormatter handles result formatting and display
@@ -17,7 +17,7 @@ func NewOutputFormatter(verbose bool) *OutputFormatter {
 }
 
 // PrintResult prints the result in the specified format
-func (of *OutputFormatter) PrintResult(result *models.GetABCResult) {
+func (of *OutputFormatter) PrintResult(result *models.JikkyoResult) {
 	fmt.Printf("(title) %s\n", result.Title)
 	fmt.Printf("(episode) %d\n", result.Episode)
 	fmt.Printf("(subtitle) %s\n", result.SubTitle)

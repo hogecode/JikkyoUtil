@@ -1,4 +1,4 @@
-package models
+﻿package models
 
 // Program represents a TV program broadcast
 type Program struct {

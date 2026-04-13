@@ -1,4 +1,4 @@
-package models
+﻿package models
 
 // JikkyoResponse is the response from Jikkyo API
 type JikkyoResponse struct {

@@ -1,4 +1,4 @@
-package models
+﻿package models
 
 // TitleSearchResponse is the response from Syoboi TitleSearch API
 type TitleSearchResponse struct {

@@ -1,4 +1,4 @@
-package models
+﻿package models
 
 // Channel represents TV channel information
 type Channel struct {
