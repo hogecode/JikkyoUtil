@@ -3,6 +3,7 @@ package api
 import (
 	"encoding/xml"
 	"fmt"
+	"strconv"
 
 	"github.com/hogecode/JikkyoUtil/internal/config"
 	"github.com/hogecode/JikkyoUtil/internal/models"
@@ -61,6 +62,20 @@ func (c *Client) GetJikkyoCommentsXML(jikkyoID string, startTime, endTime int64)
 	err = xml.Unmarshal(resp.Body(), &result)
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse Jikkyo XML response: %w", err)
+	}
+
+	// Normalize vpos values: set the first comment's vpos to 0 and adjust all others accordingly
+	if len(result.Chats) > 0 {
+		firstVpos, err := strconv.ParseInt(result.Chats[0].Vpos, 10, 64)
+		if err == nil && firstVpos > 0 {
+			for i := range result.Chats {
+				currentVpos, err := strconv.ParseInt(result.Chats[i].Vpos, 10, 64)
+				if err == nil {
+					normalizedVpos := currentVpos - firstVpos
+					result.Chats[i].Vpos = fmt.Sprintf("%d", normalizedVpos)
+				}
+			}
+		}
 	}
 
 	return &result, nil
